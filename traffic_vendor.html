@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>traffic_vendor</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="./js/jquery.fancybox.css" type="text/css"/>
+    <link rel="stylesheet" href="./js/tabs/jquery-ui.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div id="traffic_vendor">
+    <div class="container">
+        <div class="traffic_left clearfix">
+            <div class="logo-wrapper clearfix">
+                <a href="#"><img src="images/icon_logo.png" alt=""></a>
+                <p class="logo"> Traffic vendor <br> <span class="your">Reinvent Your Advertising</span></p>
+            </div>
+            <div class="form">
+                <a class="various sign_in" href="#login" data-tab="#tabs-2">Sign in</a>
+                <a class="various register" href="#login" data-tab="#tabs-1">Register</a>
+                <a href="#" class="live-chat">Live support</a>
+                <p class="time">11:04, 26 Jun 2018</p>
+               <p class="flag"><img src="images/icon_flag.png" alt="">en</p>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix main-container">
+        <div class="left-sidebar">
+            <ul class="main_left_top">
+                <li class="geo">Geo Targeting </li>
+                <li class="lang">Language Targeting </li>
+                <li class="dev">Device Targeting</li>
+                <li class="clean">Clean sites only </li>
+            </ul>
+            <h2 class="different">Different Ads format</h2>
+            <ul class="main_left_bottom">
+                <li class="in_page">In-page banners </li>
+                <li class="st_footer">Sticky Footer </li>
+                <li class="st_header">Sticky Header</li>
+                <li class="screen">Full Screen </li>
+                <li class="under">Pop-under </li>
+            </ul>
+            <div class="mail">
+                <a href="#"><img src="images/icon_arrow.png"></a>
+                <br>
+                <a href="#"><img src="images/icno_mail.png"></a>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="center_top">
+                <h2 class="Crypto">Cryptocurrency advertising network</h2>
+                <p class="board">Welcome on board</p>
+            </div>
+            <div class="center_bottom">
+                <p class="buzz">buzz</p>
+                <span class="Guys">Hey, Guys new ICO is started, let<br>searn some thousand of benjamins,<br>Yaah.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: none">
+    <div id="login">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Register</a></li>
+                <li><a href="#tabs-2">Login</a></li>
+            </ul>
+            <div id="tabs-1">
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div id="tabs-2">
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a class="forgot" href="#">Forgot password?</a>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="./js/tabs/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".various").fancybox({
+            maxWidth	: 422,
+            maxHeight	: 400,
+            fitToView	: false,
+            width		: '422px',
+            height		: '400px',
+            autoSize	: false,
+            closeClick	: false,
+            openEffect	: 'none',
+            closeEffect	: 'none'
+        });
+    });
+    $( function() {
+        $( "#tabs" ).tabs({
+            active: 0
+        });
+        $("a[data-tab]").on("click", function (event) {
+            $("a[href='"+$(this).data('tab')+"']").trigger("click");
+        })
+    } );
+</script>
+</body>
+</html>
