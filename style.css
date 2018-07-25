@@ -33,7 +33,7 @@ body {
     margin: 25px -4px 0 42px;
 }
 div#traffic_vendor {
-     background: url("../traffic vendor/images/background.jpg") no-repeat;
+     background: url("images/background.jpg") no-repeat;
      width: 100%;
      background-size: cover;
  }
